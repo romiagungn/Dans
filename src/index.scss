@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EEEEF0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.loader {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  height: 5vh;
+  width: 5vh;
+  border: 6px solid rgba(0, 174, 239, 0.2);
+  border-top-color: rgba(0, 174, 239, 0.8);
+  border-radius: 100%;
+  animation: rotation 0.6s infinite linear 0.25s;
+
+  /* the opacity is used to lazyload the spinner, see animation delay */
+  /* this avoid the spinner to be displayed when visible for a very short period of time */
+  opacity: 0;
+}
+
+@keyframes rotation {
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(359deg);
+  }
+}
+
+.medsos {
+  cursor: pointer;
+  margin: 5px;
+}
+.card {
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 10px;
+}
+.btn {
+  border-radius: 30px;
+  background-color: #359F85;
+  width: 200px;
+  color: #FFFFFF;
+}
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: black;
+}
+.navbar {
+  height: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  will-change: transform;
+  top: 0;
+  z-index: 10;
+  min-height: 80px;
+  background-color: #FFFFFF;
+}
+.section {
+  margin-bottom: 5rem;
+}

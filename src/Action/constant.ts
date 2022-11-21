@@ -1,0 +1,9 @@
+export const GET_LIST = 'GET_LIST';
+export const GET_AREA = 'GET_AREA';
+export const GET_SIZE = 'GET_SIZE';
+export const GET_LIST_SUCCESS = 'GET_LIST_SUCCESS';
+export const GET_CHACE_SUCCESS = 'GET_CHACE_SUCCESS';
+export const GET_AREA_SUCCESS = 'GET_AREA_SUCCESS';
+export const GET_SIZE_SUCCESS = 'GET_SIZE_SUCCESS';
+export const POST_FISHED_SUCCESS = 'POST_FISHED_SUCCESS';
+export const IS_LOADING = 'IS_LOADING'
